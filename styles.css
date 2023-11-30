@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Head: */
+header {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#navbar {
+    background-color: #ebc610;
+}
+
+#navbar ul {
+    margin-left: 130px;
+    font-size: 18pt;
+}
+
+#navbar ul a {
+    border-right: 2px solid black;
+}
+
+#navbar ul a#last {
+    border-right: none;
+}
+
+#navbar #search-field {
+    height: 50px;
+}
+
+#navbar #search-field ::placeholder {
+    font-style: italic;
+}
+
+#navbar #search-field button {
+    font-weight: bold;
+}
+
+/*Fim - head */
+
+/* Main: */
+main {
+    margin-top: 1em;
+}
+
+#cronos {
+    margin-top: 1em;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#clock {
+    max-width: 500px;
+    height: 500px;
+    background-image: url('./images/cronometro-bg.png');
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    margin: 0 10px;
+    filter: drop-shadow(0px 4px 10px #0051ff);
+}
+
+#choice-time form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#choice-time #choice-run {
+    padding: 10px;
+    width: 180px;
+    background-color: #c50b0bbb;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#choice-time #choice-rest{
+    padding: 10px;
+    background-color: #109428b4;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+#choice-time input {
+    width: 60px;
+}
+
+#play {
+    margin-top: 10px;
+}
+
+#play #run, #rest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    margin-top: 185px;
+    font-size: 60pt;
+    text-align: center;
+}
+
+#clock #btn button {
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15pt;
+    padding: 5px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-stop{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-stop button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15pt;
+    padding: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#clock button:hover {
+    background-color: #ce7b7b;
+    color: #fff;
+}
+
+#jukiebox {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#roky, #priscila {
+    height: 70px;
+    background-color: #7a7a7a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 3px 3px 5px rgba(252, 2, 2, 0.5); */
+    filter: drop-shadow(0px 4px 10px #ff1100);
+} 
+/* Fim - main */
+
+/* Footer */
+#footer {
+    margin-top: 2em;
+    padding: 3em 2em;
+    background-color: black;
+    box-shadow: 0 -5px 3px rgba(0, 0, 0, 0.5);
+}
+
+#footer p {
+    color: #fff;
+}
+
+#footer-top {
+    margin-bottom: 2em;
+}
+
+#footer-top,
+#footer-top i {
+    color: #fff;
+}
+
+#social-icons {
+    text-align: right;
+}
+
+#social-icons i {
+    margin-right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#social-icons i:hover {
+    color: #7a6f6f;
+}
+
+/* FOOTER DETAILS */
+#footer-details {
+    margin-bottom: 3em;
+}
+
+#news-container,
+#contact-container,
+#links-container {
+    padding: 0;
+    border: 0;
+    margin-bottom: 2em;
+}
+
+#footer-details h4 {
+    color: #fff;
+    margin-bottom: 1.5em;
+}
+
+#news-container input {
+    border-radius: 0;
+    border: none;
+}
+
+#links-container li {
+    margin-bottom: 0.5em;
+}
+
+#links-container a {
+    text-decoration: none;
+}
+
+#links-container a:hover {
+    color: #fff;
+}
+
+/* FOOTER BOTTOM */
+#footer-bottom {
+    border-top: 1px solid #7a7a7a;
+    padding-top: 2em;
+}
+
+#footer-bottom i {
+    color: #e61e10;
+}
+
+@media (min-width: 768px) {
+    #news-container {
+        padding-right: 2em;
+    }
+
+    #contact-container {
+        padding: 0 2em;
+        border-left: 1px solid #7a7a7a;
+        border-right: 1px solid #7a7a7a;
+    }
+
+    #links-container {
+        padding-left: 2em;
+    }
+}
